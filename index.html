@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <link rel="stylesheet" href="style.css" />
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PRAA.ID - Top Up Game Online</title>
+  <meta name="description" content="PRAA.ID tempat top up game PUBG, Mobile Legends, Free Fire terpercaya dan cepat." />
+  <meta name="keywords" content="top up game, PUBG, Mobile Legends, Free Fire, diamond, UC" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,49 +19,42 @@
     <a href="kontak.html">Kontak</a>
   </nav>
 </header>
+<main>
+  <h2>Selamat datang di PRAA.ID</h2>
+  <p>Tempat top up game online terpercaya untuk PUBG, Mobile Legends, Free Fire, dan lainnya.</p>
 
-<section class="banner">
-  <h2>Top Up Game Cepat, Murah, dan Aman di PRAA.ID</h2>
-  <p>Solusi terbaik untuk top up PUBG, Mobile Legends, dan Free Fire</p>
-</section>
+  <section class="contact-section">
+    <h3>Kontak Kami</h3>
+    <form id="contactForm">
+      <label for="name">Nama:</label><br />
+      <input type="text" id="name" name="name" required /><br />
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="message">Pesan:</label><br />
+      <textarea id="message" name="message" required></textarea><br />
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
 
-<section class="game-list">
-  <div class="game-item">
-    <img src="https://upload.wikimedia.org/wikipedia/en/6/6c/PUBG_Logo.svg" alt="PUBG" />
-    <p>PUBG</p>
-  </div>
-  <div class="game-item">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Mobile_Legends_Logo.svg/1200px-Mobile_Legends_Logo.svg.png" alt="Mobile Legends" />
-    <p>Mobile Legends</p>
-  </div>
-  <div class="game-item">
-    <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Free_Fire_Logo.png" alt="Free Fire" />
-    <p>Free Fire</p>
-  </div>
-</section>
-
-<section class="products-preview">
-  <h3>Produk Terpopuler</h3>
-  <div class="product-card">
-    <h4>Paket Diamond Mobile Legends 50</h4>
-    <p>Harga: Rp 12.000</p>
-    <a href="produk.html#ml50" class="btn">Order Sekarang</a>
-  </div>
-  <div class="product-card">
-    <h4>Paket UC PUBG 100</h4>
-    <p>Harga: Rp 25.000</p>
-    <a href="produk.html#pubg100" class="btn">Order Sekarang</a>
-  </div>
-  <div class="product-card">
-    <h4>Paket Coin Free Fire 150</h4>
-    <p>Harga: Rp 15.000</p>
-    <a href="produk.html#ff150" class="btn">Order Sekarang</a>
-  </div>
-</section>
-
+  <section class="whatsapp-section">
+    <h3>Order via WhatsApp</h3>
+    <a href="https://wa.me/628123456789" target="_blank" class="btn-whatsapp">Chat Kami di WhatsApp</a>
+  </section>
+</main>
 <footer>
-  <p>Kontak kami: WA +62 812-3456-7890 | TikTok @PRAA.ID | Instagram @PRAA.ID</p>
-  <p>© 2025 PRAA.ID - Semua Hak Cipta Dilindungi</p>
+  <p>&copy; 2025 PRAA.ID - All rights reserved</p>
 </footer>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.textContent = 'Terima kasih, pesan Anda sudah terkirim!';
+    form.reset();
+  });
+</script>
 </body>
 </html>
